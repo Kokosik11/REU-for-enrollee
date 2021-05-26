@@ -4,6 +4,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .sub-header {
   max-width: 1200px;
   margin: auto;
@@ -158,22 +162,25 @@ header {
   margin-top: 30px;
   margin-bottom: 20px;
 }
+input[type=email],
 input[type=text] {
-  background: #FFFFFF;
-  border: 1px solid #0043A0;
-  box-sizing: border-box;
-  border-radius: 8px;
-  outline: none;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 20px;
-  margin-right: 36px;
-
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 26px;
-  color: #0043A0;
-}
+    background: #FFFFFF;
+    border: 1px solid #0043A0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 20px;
+    margin-right: 36px;
+  
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #0043A0;
+  }
+  
+input[type=email]::placeholder, 
 input[type=text]::placeholder {
   font-weight: 500;
   font-size: 22px;
@@ -339,4 +346,311 @@ input[type=submit]:hover {
 .program-info button:hover {
   background-color: #4F89DA;
   transition: 0.3s ease;
+}
+
+.learn h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #0043A0;
+}
+
+.learn .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.learn .cards .card {
+    position: relative;
+    max-width: 537px;
+    height: 293px;
+    margin-bottom: 59px;
+    border-radius: 8px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.learn .cards .card div {
+    padding-right: 75px;
+    margin: 38px;
+}
+
+.learn .cards .card:nth-child(1) {
+    background: #CA9BFF;
+}
+
+.learn .cards .card:nth-child(2) {
+    background: #668EC6;
+}
+
+.learn .cards .card:nth-child(3) {
+    background: #60CDA7;
+}
+
+.learn .cards .card:nth-child(4) {
+    background: #FF7E89;
+}
+
+.learn .cards .card:nth-child(1) img {
+    position: absolute;
+    right: -6px;
+    bottom: -19px;
+}
+
+.learn .cards .card:nth-child(2) img {
+    position: absolute;
+    right: -8px;
+    bottom: -4px;
+}
+
+.learn .cards .card:nth-child(3) img {
+    position: absolute;
+    right: -30px;
+    bottom: -18px;
+}
+
+.learn .cards .card:nth-child(4) img {
+    position: absolute;
+    right: -45px;
+    bottom: -126px;
+}
+
+.diploma {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 125px auto 0;
+}
+
+.diploma-heading {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    color: #0043A0;
+    margin-right: 10px;
+}
+
+.diploma-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.diploma-card {
+    max-width: 307px;
+    background: #F3F6FD;
+    border-radius: 8px;
+    padding: 26px;
+}
+
+.diploma-card_content {
+    margin: 18px 0 28px;
+    color: #668EC6;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.diploma-card_content b {
+    color: #0043A0;
+}
+
+.diploma-card a {
+    text-decoration: none;
+    max-width: 121px;
+    border-bottom: 2px solid #668ec600;
+    color: #668EC6;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    transition: .25s;
+}
+
+.diploma-card a:hover {
+    border-bottom: 2px solid #668ec6;
+    transition: .25s;
+}
+
+.diploma-card a img {
+    margin-left: 10px;
+}
+
+.how-to-enter {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 20px auto 0;
+}
+
+.how-to-enter_heading {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    color: #0043A0;
+    margin-right: 10px;
+}
+
+.how-to-enter_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.how-to-enter_cards .card {
+    width: 556px;
+    background: #F3F6FD;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.how-to-enter_cards .card:nth-child(1),
+.how-to-enter_cards .card:nth-child(2) {
+    margin-bottom: 109px;
+}
+
+.how-to-enter_cards .dropdown-content {
+    display: none;
+}
+
+.how-to-enter_cards .card h3 {
+    color: #0043A0;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0 0 30px;
+}
+
+.how-to-enter_cards .card-title {
+    display: flex;
+    align-items: flex-start;
+    font-size: 25px;
+    font-size: 500;
+}
+
+.how-to-enter_cards .card-title span {
+    margin: 0 10px 0 20px;
+}
+
+.how-to-enter > form {
+    margin-top: 55px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 20px auto 0;
+}
+
+.price-heading {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    color: #0043A0;
+    margin-right: 10px;
+}
+
+.price-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price-cards .card {
+    width: 307px;
+    background: #F3F6FD;
+    border-radius: 8px;
+    margin-right: 50px;
+    padding: 26px;
+}
+
+.price-cards .card-heading {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    color: #0043A0;
+}
+
+.price-cards .card-subheading {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 25px 0;
+    color: #668EC6;
+}
+
+.price-cards .card-price {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #0043A0;
+}
+
+.price-cards .price-description {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: #668EC6;
+}
+
+.price-cards .card a {
+    text-decoration: none;
+    max-width: 112px;
+    border-bottom: 2px solid #668ec600;
+    color: #668EC6;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    transition: .25s;
+}
+
+.price-cards .card a:hover {
+    border-bottom: 2px solid #668ec6;
+    transition: .25s;
+}
+
+.price-cards .card a img {
+    margin-left: 10px;
+}
+
+.price form {
+    margin-top: 55px;
+}
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 20px auto 0;
+}
+
+.rules-heading {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    color: #0043A0;
+    margin-right: 10px;
+    max-width: 791px;
+}
+
+.rules-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1036px;
+    justify-content: space-between;
+}
+
+.rules-content .document {
+    display: flex;
+    justify-content: center;
+    width: 493px;
+    padding: 36px 100px;
+    background: #F3F6FD;
+    border-radius: 30px;
+}
+
+.rules-content .document {
+    margin-bottom: 35px;
+}
+
+.document-name {
+    color: #668EC6;
+    font-size: 25px;
+    font-weight: 500;
 }
