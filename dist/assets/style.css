@@ -529,7 +529,7 @@ input[type=submit]:hover {
 }
 
 .dropdown-arrow {
-  transform: rotateX(0);
+  transform: rotateZ(0);
   transition: .45s;
 }
 
