@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif; 
+  margin: 0;
+  padding: 0;
 }
 
 * {
   box-sizing: border-box;
+ 
 }
 
 .sub-header {
@@ -527,6 +530,10 @@ input[type=submit]:hover {
 
 .how-to-enter_cards .card-title span {
     margin: 0 10px 0 20px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: #0043A0;    
 }
 
 .how-to-enter > form {
@@ -796,4 +803,204 @@ input[type=submit]:hover {
   font-size: 26px;
   line-height: 31px;
   color: #0043A0;
+}
+.footer {
+  margin-top: 110px;
+  background-color: #F3F6FD;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer #scientist {
+  padding-right: 120px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  margin-bottom: 70px;
+}
+.footer-bottom {
+  display: flex;
+  margin-bottom: 40px;
+}
+.footer-bottom .copy {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #668EC6;
+  margin-right: 40px;
+}
+.footer-bottom a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #668EC6;
+}
+.reu-info {
+  background: #E8EDF9;
+  border-radius: 8px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 96px;
+  padding-bottom: 25px;
+  max-width: 307px;
+}
+.reu-heading {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #668EC6;
+  margin-bottom: 20px;
+}
+.address span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0043A0;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.address span img {
+  margin-right: 10px;
+}
+.address-info {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #668EC6;
+}
+.committee {
+  margin-top: 25px;
+}
+.working-hours {
+  display: flex;
+  flex-direction: column;
+}
+.working-hours span {
+  margin-bottom: 10px;
+}
+.working-hours_content .day {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #668EC6;
+  min-width: 45px;
+}
+.working-hours_content time {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0043A0;
+  margin-left: 10px;
+}
+.phones {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.phones a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0043A0;
+  margin-bottom: 10px;
+}
+.phones a img {
+  margin-right: 10px;
+}
+.reu-info button {
+  background-color: #0043A0;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 16px;
+  padding-left: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.reu-info button:hover {
+  background-color: #4F89DA;
+  transition: 0.3s ease;
+}
+.footer-links {
+  display: flex;
+}
+.footer-links .links nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.links {
+  max-height: 284px;
+}
+.links nav h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0043A0;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+.links nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #668EC6;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease;
+}
+.links nav ul li a:hover {
+  border-bottom: 2px solid #668EC6;
+  transition: 0.3s ease;
+}
+.links nav ul li {
+  margin-bottom: 14px;
+}
+.right-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 350px;
+}
+.right-links nav {
+  margin-right: 40px;
+  max-height: 119px;
+  width: 149px;
+  margin-bottom: 49px;
+}
+.right-links nav:last-child {
+  margin-right: 0;
+}
+.right-links nav:nth-child(2) {
+  margin-right: 0;
+}
+.left-links {
+  margin-left: 50px;
+  display: flex;
+  margin-right: 40px;
+}
+.footer-content-info {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
