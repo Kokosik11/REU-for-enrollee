@@ -656,7 +656,6 @@ input[type=submit]:hover {
     font-size: 25px;
     font-weight: 500;
 }
-<<<<<<< HEAD
 .courses {
   max-width: 1200px;
   margin: auto;
@@ -726,7 +725,7 @@ input[type=submit]:hover {
   color: #668EC6;
   margin-top: 5px;
   transition: .25s;
-=======
+}
 
 .document-format {
     color: #C2D2E8;
@@ -739,5 +738,62 @@ input[type=submit]:hover {
     align-items: center;
     padding: 0 40px;
     justify-content: space-between;
->>>>>>> c7bd92d177a15e65519a239e000107376096f9d3
+}
+.openday {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 70px;
+}
+.openday-heading {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  color: #0043A0;
+
+  margin-bottom: 50px;
+}
+.openday-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.openday-content img {
+  max-width: 339px;
+}
+.openday-schedule {
+  display: flex;
+  flex-direction: column;
+}
+.openday-geo,
+.openday-day {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.openday-geo img,
+.openday-day img {
+  margin-right: 20px;
+}
+.openday-geo a {
+  text-decoration: none;
+}
+.openday-text {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  color: #668EC6;
+}
+.openday-info {
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  color: #668EC6;
+  margin-top: 50px;
+}
+.openday-info b {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  color: #0043A0;
 }
