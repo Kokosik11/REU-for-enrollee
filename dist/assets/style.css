@@ -642,7 +642,7 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     width: 493px;
-    padding: 36px 100px;
+    padding: 36px 0;
     background: #F3F6FD;
     border-radius: 30px;
 }
@@ -656,6 +656,7 @@ input[type=submit]:hover {
     font-size: 25px;
     font-weight: 500;
 }
+<<<<<<< HEAD
 .courses {
   max-width: 1200px;
   margin: auto;
@@ -725,4 +726,18 @@ input[type=submit]:hover {
   color: #668EC6;
   margin-top: 5px;
   transition: .25s;
+=======
+
+.document-format {
+    color: #C2D2E8;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 10px 0 16px;
+}
+
+.rules-content .document:last-child {
+    align-items: center;
+    padding: 0 40px;
+    justify-content: space-between;
+>>>>>>> c7bd92d177a15e65519a239e000107376096f9d3
 }
