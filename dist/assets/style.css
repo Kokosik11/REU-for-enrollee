@@ -566,6 +566,7 @@ input[type=submit]:hover {
     font-weight: 600;
     margin: 0 0 15px 0;
     color: #0043A0;
+    margin-bottom: 22px;
 }
 
 .price-cards .card-subheading {
@@ -580,6 +581,7 @@ input[type=submit]:hover {
     font-weight: 700;
     margin: 0 0 10px 0;
     color: #0043A0;
+    width: 240px;
 }
 
 .price-cards .price-description {
@@ -653,4 +655,74 @@ input[type=submit]:hover {
     color: #668EC6;
     font-size: 25px;
     font-weight: 500;
+}
+.courses {
+  max-width: 1200px;
+  margin: auto;
+}
+.courses-heading {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  color: #0043A0;
+}
+.courses-info {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  color: #668EC6;
+  max-width: 991px;
+}
+.courses-info b {
+  color: #0043A0;
+}
+.courses-cards .card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 26px;
+  padding-left: 26px;
+  padding-right: 51px;
+  padding-bottom: 57px;
+
+  background-color: #F3F6FD;
+  border-radius: 8px;
+  max-width: 307px;
+  margin-top: 40px;
+  margin-bottom: 55px;
+}
+.courses-cards .card a {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #668EC6;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.courses-cards .card a img {
+  margin-left: 10px;
+}
+.card-heading {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 41px;
+  color: #0043A0;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+.card-price {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  color: #0043A0;
+  width: 240px;
+}
+.price-description {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #668EC6;
+  margin-top: 5px;
+  transition: .25s;
 }
