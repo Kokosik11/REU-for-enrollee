@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Абитуриентам | РЭУ им. Плеханова</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <div class="sub-header">
@@ -12,21 +13,22 @@
             <span class="worktime">Время работы приемной комиссии: пн-пт с 10:00-16:00</span>
             <span class="contacts">
                 <ul>
-                    <li><img src="assets/img/number.svg" alt="phone">+375 17 316 12 86</li>
-                    <li><img src="assets/img/number.svg" alt="phone">+375 29 126 11 36</li>
+                    <li><img src="assets/img/number.svg" id="phone-img" alt="phone">+375 17 316 12 86</li>
+                    <li><img src="assets/img/number.svg" id="phone-img" alt="phone">+375 29 126 11 36</li>
                     <button>Заявка на обучение</button>
                 </ul>
             </span>
         </div>
     </div>
+    <div class="line"></div>
     <header>
         <div class="logo">
             <img src="./assets/img/reu.svg" alt="Logo: REU">
-            <div>
+            <span>
                 Минский филиал 
                 Российского экономического
                 университета им. Г.В. Плеханова
-            </div>
+            </span>
         </div>
         <div class="buttons">
             <a class="active" href="#">Бакалавриат</a>
@@ -73,9 +75,9 @@
 
             <nav class="programs">
                 <div class="program-line">
-                    <div class="program">Бизнес-информатика</div>
-                    <div class="program">Бизнес-информатика</div>
-                    <div class="program">Бизнес-информатика</div>
+                    <div class="program active">Бизнес-информатика</div>
+                    <div class="program">Менеджмент</div>
+                    <div class="program">Экономика</div>
                 </div>
                 
                 <div class="short-line"></div>
@@ -85,22 +87,22 @@
             <article class="program-section">
                 <h3>
                     Образовательная программа<br> 
-                    “Управление IT-инфраструктурой предприятия”
+                    <span>“Управление IT-инфраструктурой предприятия”</span>
                 </h3>
     
                 <aside class="program-card">
-                    <div>
+                    <span>
                         Код и наименование направления подготовки: <br>
                         <b>38.03.05 Бизнес-информатика</b>    
-                    </div>
-                    <div>
+                    </span>
+                    <span id="entrance">
                         Вступительное испытание: <br>
                         <b>математика</b>    
-                    </div>
-                    <div>
+                    </span>
+                    <span>
                         Формы обучения: <br>
                         <b>очная, очно-заочная (вечерняя)</b>    
-                    </div>
+                    </span>
                 </aside>
     
                 <div class="program-info">

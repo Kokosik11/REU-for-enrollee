@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.sub-header {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 19px;
+}
+.line {
+  margin: auto;
+  height: 2px;
+  max-width: 1200px;
+  background-color: rgba(0, 67, 160, 0.2);
+  border-radius: 8px;
+  margin-top: 13px;
+  margin-bottom: 20px;
+}
+.sub-header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub-header_content ul {
+  display: flex;
+  list-style-type: none;
+}
+.sub-header_content ul li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0043A0;
+  margin-left: 30px;
+}
+.sub-header_content ul button {
+  margin-left: 30px;
+  background: #0043A0;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-right: 16px;
+  padding-left: 16px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.sub-header ul button:hover {
+  background-color: #4F89DA;
+  transition: 0.3s ease;
+}
+#phone-img {
+  margin-right: 13px;
+}
+.worktime {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0043A0;
+}
+header {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #0043A0;
+  max-width: 193px;
+  margin-left: 20px;
+}
+.buttons a{
+  background: #fff;
+  border-radius: 8px;
+
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 32px;
+  color: #0043A0;
+  text-decoration: none;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 17px;
+  padding-left: 17px;
+  margin-left: 30px;
+}
+.buttons .active {
+  background: #4F89DA;
+  border-radius: 8px;
+
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.info {
+  max-width: 1200px;
+  margin: auto;
+}
+.info-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-heading h1 {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  color: #0043A0;
+}
+
+.info-heading .right {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: #0043A0;
+  margin-left: 38px;
+}
+.info-content {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  color: rgba(0, 67, 160, 0.6);
+  max-width: 778px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.info-questions {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  color: rgba(0, 67, 160, 0.6);  
+}
+.info-questions b {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: #0043A0;
+}
+.forms {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+input[type=text] {
+  background: #FFFFFF;
+  border: 1px solid #0043A0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  outline: none;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  margin-right: 36px;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #0043A0;
+}
+input[type=text]::placeholder {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: rgba(102, 142, 198, 0.4);
+}
+input[type=submit] {
+  background: #0043A0;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 34px;
+  padding-left: 34px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+input[type=submit]:hover {
+  background-color: #4F89DA;
+  transition: 0.3s ease;
+}
+.personal-data label {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  color: #16558C;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+}
+.education-heading {
+  display: flex;
+  align-items: flex-start;
+}
+.education-heading h2 {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  color: #0043A0;
+  margin-right: 10px;
+}
+.education-heading h3 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  color: #668EC6;  
+}
+.programs {
+  margin-bottom: 50px;
+}
+.program-line {
+  display: flex;
+}
+.program {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  color: #668EC6;
+  margin-right: 86px;
+  padding-left: 62px;
+}
+.program.active {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  color: #0043A0;  
+}
+.long-line {
+  height: 6px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #CCD9EC;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.program-section h3 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #0043A0;
+  margin-bottom: 44px;
+}
+.program-section h3 span {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #668EC6;
+}
+.program-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 537px;
+
+  border: 4px solid #CCD9EC;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 38px;
+  margin-bottom: 50px;
+}
+.program-card span {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #668EC6;
+  max-width: 461px;
+}
+.program-card span b {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #0043A0;
+}
+#entrance {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+.program-info {
+  display: flex;
+  flex-direction: column;
+}
+.program-info span {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  color: #668EC6;
+  max-width: 1029px;
+}
+.program-info span b {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  color: #0043A0;
+}
+.program-info button {
+  background: #0043A0;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  max-width: 183px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 50px;
+
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 70px;
+}
+.program-info button:hover {
+  background-color: #4F89DA;
+  transition: 0.3s ease;
+}
