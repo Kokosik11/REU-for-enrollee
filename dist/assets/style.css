@@ -528,6 +528,11 @@ input[type=submit]:hover {
     display: none;
 }
 
+.dropdown-arrow {
+  transform: rotateX(0);
+  transition: .45s;
+}
+
 .how-to-enter_cards .card h3 {
     color: #0043A0;
     font-size: 35px;

@@ -19,7 +19,6 @@ buttons.forEach(button => {
 
         buttons[+button.dataset.id - 1].classList.add("active");
 
-
         programName.innerHTML = info[button.dataset.id - 1].programName;
         programDirection.innerHTML = info[button.dataset.id - 1].programDirection;
         enterExams.innerHTML = info[button.dataset.id - 1].enterExams;
