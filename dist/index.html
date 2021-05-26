@@ -75,39 +75,40 @@
 
             <nav class="programs">
                 <div class="program-line">
-                    <div class="program active">Бизнес-информатика</div>
-                    <div class="program">Менеджмент</div>
-                    <div class="program">Экономика</div>
+                    <div data-id="1" class="program active">Бизнес-информатика</div>
+                    <div data-id="2" class="program">Менеджмент</div>
+                    <div data-id="3" class="program">Экономика</div>
                 </div>
-                
-                <div class="short-line"></div>
-                <div class="long-line"></div>
+
+                <div class="long-line">
+                    <div class="short-line"></div>
+                </div>                
             </nav>
 
             <article class="program-section">
                 <h3>
                     Образовательная программа<br> 
-                    <span>“Управление IT-инфраструктурой предприятия”</span>
+                    <span class="program-name">“Управление IT-инфраструктурой предприятия”</span>
                 </h3>
     
                 <aside class="program-card">
                     <span>
                         Код и наименование направления подготовки: <br>
-                        <b>38.03.05 Бизнес-информатика</b>    
+                        <b class="program-direction">38.03.05 Бизнес-информатика</b>    
                     </span>
                     <span id="entrance">
                         Вступительное испытание: <br>
-                        <b>математика</b>    
+                        <b class="enter-exams">математика</b>    
                     </span>
                     <span>
                         Формы обучения: <br>
-                        <b>очная, очно-заочная (вечерняя)</b>    
+                        <b class="form-of-study">очная, очно-заочная (вечерняя)</b>    
                     </span>
                 </aside>
     
                 <div class="program-info">
                     <span>
-                        <b>Бизнес-информатика</b> - одно из самых молодых и перспективных направлений подготовки современного высшего образования, новая область профессиональной деятельности, формирующаяся на стыке экономики, менеджмента и информационно-коммуникационных технологий (ИКТ).
+                        <b class="direction-name-two">Бизнес-информатика</b><span class="direction-info"> - одно из самых молодых и перспективных направлений подготовки современного высшего образования, новая область профессиональной деятельности, формирующаяся на стыке экономики, менеджмента и информационно-коммуникационных технологий (ИКТ).</span>
                     </span>
     
                     <button>Подробнее</button>
@@ -513,5 +514,8 @@
 
         <img src="./assets/img/science.svg" alt="illustration: Science">
     </footer>
+
+    <script src="./assets/scripts/navigation.js"></script>
+    <script src="./assets/scripts/data/info.js"></script>
 </body>
 </html>

@@ -173,7 +173,6 @@ input[type=text] {
     padding-bottom: 18px;
     padding-left: 20px;
     margin-right: 36px;
-  
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
@@ -251,6 +250,23 @@ input[type=submit]:hover {
   margin-right: 86px;
   padding-left: 62px;
 }
+
+.program:hover {
+    cursor: pointer;
+}
+
+.short-line {
+    height: 10px;
+    width: 265px;
+    background: #0043A0;
+    border-radius: 8px;
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    left: 5%;
+    transition: .25s;
+}
+
 .program.active {
   font-weight: 500;
   font-size: 25px;
@@ -258,6 +274,7 @@ input[type=submit]:hover {
   color: #0043A0;  
 }
 .long-line {
+  position: relative;
   height: 6px;
   max-width: 1200px;
   margin: auto;
