@@ -518,6 +518,7 @@ input[type=submit]:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .how-to-enter_cards .card {
@@ -525,6 +526,7 @@ input[type=submit]:hover {
     background: #F3F6FD;
     border-radius: 30px;
     padding: 40px;
+    min-height: 233px;
 }
 
 .how-to-enter_cards .card:nth-child(1),
