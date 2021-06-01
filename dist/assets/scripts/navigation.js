@@ -18,7 +18,7 @@ const changeFile = (isBachalor) => {
     info = isBachalor ? Array.from(bachalorInfo) : Array.from(masterInfo);
     isBachalorInfo = true;
     if(!isBachalor) {
-        buttons[1].classList.add("active");
+        buttons[1].classList.add("program_active");
         isBachalorInfo = false;
     }
     changeData(1);
@@ -43,10 +43,10 @@ const changeData = (dataset) => {
     }
     
     buttons.forEach(but => {
-        but.classList.remove("active");
+        but.classList.remove("program_active");
     })
 
-    buttons[dataset].classList.add("active");
+    buttons[dataset].classList.add("program_active");
     
 
     if(!isBachalorInfo) dataset--;
