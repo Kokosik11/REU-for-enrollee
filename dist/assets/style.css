@@ -782,7 +782,7 @@ input[type=submit]:hover {
 
 .rules-content .document:last-child {
     align-items: center;
-    padding: 0 40px;
+    padding: 36px 40px;
     justify-content: space-between;
 }
 .openday {
@@ -1141,7 +1141,16 @@ input[type=submit]:hover {
   .price-heading {
     text-align: center;
   }
+
+  .rules-content {
+    justify-content: center;
+  }
+
+  .document {
+    margin: 0 20px 35px;
+  }
 }
+
 
 @media (max-width: 1060px) {
   .diploma-content {
@@ -1150,5 +1159,89 @@ input[type=submit]:hover {
 
   .diploma-heading {
     text-align: center;
+  }
+
+  
+}
+
+@media (max-width: 1023px) {
+  .info-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-heading h1 {
+    margin-bottom: 0;
+  }
+
+  .info-heading .right {
+    margin: 0;
+  }
+}
+
+@media (max-width: 970px) {
+  .footer-content {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .reu-info {
+    max-width: 646px;
+    margin-bottom: 50px;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .left-links {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  
+  .right-links {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 666px) {
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-links {
+    margin-bottom: 50px;
+  }
+
+  .right-links {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 609px) {
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom .copy {
+    margin: 0 0 15px;
+  }
+}
+
+@media (max-width: 404px) {
+  .links {
+    max-height: 700px;
+  }
+
+  .right-links {
+    justify-content: center;
+  }
+
+  .right-links nav {
+    margin-right: 0;
   }
 }
