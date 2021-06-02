@@ -256,7 +256,8 @@ input[type=submit]:hover {
   line-height: 29px;
   color: #668EC6;
   margin-right: 86px;
-  padding-left: 62px;
+  margin-left: 62px;
+  padding: 10px 0;
 }
 
 .program:hover {
@@ -459,6 +460,7 @@ input[type=submit]:hover {
 .diploma-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .diploma-card {
@@ -466,6 +468,7 @@ input[type=submit]:hover {
     background: #F3F6FD;
     border-radius: 8px;
     padding: 26px;
+    margin: 10px 10px;
 }
 
 .diploma-card_content {
@@ -779,7 +782,7 @@ input[type=submit]:hover {
 
 .rules-content .document:last-child {
     align-items: center;
-    padding: 0 40px;
+    padding: 36px 40px;
     justify-content: space-between;
 }
 .openday {
@@ -1039,4 +1042,206 @@ input[type=submit]:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+@media (max-width: 1310px) {
+  .learn .cards {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .scientist {
+    display: none;
+  }
+
+  .learn .cards {
+    padding: 30px;
+  }
+
+  .learn .cards .card {
+    margin: 30px 15px;
+  }
+
+  main, header, .sub-header {
+    padding: 0 30px;
+  }
+
+  .learn h3 {
+    text-align: center;
+  }
+  .learn .cards {
+    justify-content: center;
+  }
+
+  .forms {
+    margin-top: 0;
+  }
+
+  .forms input {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .education-heading {
+    flex-direction: column;
+  }
+
+  .education-heading h2 {
+    margin: 30px 0 0 0;
+  }
+
+  .education-heading h3 {
+    margin: 10px 0 30px 0;
+  }
+
+  .long-line {
+    display: none;
+  }
+
+  .program-line {
+    justify-content: space-around;
+  }
+
+  .program {
+    margin: 0;
+  }
+
+  .program_active {
+    border-bottom: 4px solid #0043A0;
+  }
+
+  .how-to-enter_cards .card {
+    margin: 25px 25px 10px;
+  }
+
+  .how-to-enter_cards {
+    justify-content: center;
+  }
+
+  .how-to-enter_cards .card:nth-child(1), .how-to-enter_cards .card:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .how-to-enter_heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1148px) {
+  .price-cards {
+    justify-content: center;
+  }
+  
+  .price-cards .card {
+    margin: 15px;
+  }
+
+  .price-heading {
+    text-align: center;
+  }
+
+  .rules-content {
+    justify-content: center;
+  }
+
+  .document {
+    margin: 0 20px 35px;
+  }
+}
+
+
+@media (max-width: 1060px) {
+  .diploma-content {
+    justify-content: center;
+  }
+
+  .diploma-heading {
+    text-align: center;
+  }
+
+  
+}
+
+@media (max-width: 1023px) {
+  .info-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-heading h1 {
+    margin-bottom: 0;
+  }
+
+  .info-heading .right {
+    margin: 0;
+  }
+}
+
+@media (max-width: 970px) {
+  .footer-content {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .reu-info {
+    max-width: 646px;
+    margin-bottom: 50px;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .left-links {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  
+  .right-links {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 666px) {
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-links {
+    margin-bottom: 50px;
+  }
+
+  .right-links {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 609px) {
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom .copy {
+    margin: 0 0 15px;
+  }
+}
+
+@media (max-width: 404px) {
+  .links {
+    max-height: 700px;
+  }
+
+  .right-links {
+    justify-content: center;
+  }
+
+  .right-links nav {
+    margin-right: 0;
+  }
 }
