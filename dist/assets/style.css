@@ -1151,6 +1151,11 @@ input[type=submit]:hover {
   }
 }
 
+@media (max-width: 1120px) {
+  .sub-header_content ul button {
+    display: none;
+  }
+}
 
 @media (max-width: 1060px) {
   .diploma-content {
@@ -1207,6 +1212,39 @@ input[type=submit]:hover {
   }
 }
 
+@media (max-width: 919px) {
+  .sub-header_content ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .sub-header_content ul li {
+    margin: 0;
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 845px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 835px) {
+  .openday-content {
+    flex-direction: column-reverse;
+  }
+
+  .openday-content img {
+    margin-bottom: 50px;
+  }
+
+  .openday-schedule span img {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 666px) {
   .footer-links {
     flex-wrap: wrap;
@@ -1232,6 +1270,12 @@ input[type=submit]:hover {
   }
 }
 
+@media (max-width: 590px) {
+  .logo span {
+    display: none;
+  }
+}
+
 @media (max-width: 404px) {
   .links {
     max-height: 700px;
@@ -1243,5 +1287,90 @@ input[type=submit]:hover {
 
   .right-links nav {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 358px) {
+  .sub-header, .line {
+    display: none;
+  }
+
+  header {
+    margin-top: 25px;
+  }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00214eb6;
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+.popup-content {
+  position: relative;
+  max-width: 1040px;
+  height: 782px;
+  background-color: #fff;
+  margin: 120px auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.popup-info {
+  padding: 90px 180px;
+  overflow: auto;
+  max-height: 700px;
+}
+
+.close {
+  position: absolute;
+  color: #ffffff; 
+  font-size: 67px;
+  right: -70px;
+  top: -60px;
+  transition: .25s;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: #74acfc;
+  transition: .25s;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.opened {
+  animation: open 1s;
+}
+
+.closed {
+  animation: close .75s;
+}
+
+@keyframes open {
+  0% {
+    transform: scale(0.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes close {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
   }
 }
