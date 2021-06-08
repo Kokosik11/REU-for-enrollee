@@ -1,5 +1,6 @@
 const line = document.querySelector(".short-line");
 const degreesNav = document.querySelectorAll(".degrees");
+const moreInfo = document.querySelector(".more-info");
 
 const programLine = document.querySelector(".program-line");
 const buttons = document.querySelectorAll(".program");
@@ -58,9 +59,12 @@ const changeData = (dataset) => {
     directionInfo.innerHTML = info[dataset].directionInfo;
 }
 
-buttons.forEach(button => {
+buttons.forEach((button, index) => {
     button.onclick = () => {
         let dataset = +button.dataset.id;
         changeData(dataset);
+
+        if(isBachalorInfo) moreInfo.dataset.id = index;
+        else moreInfo.dataset.id = index + 2;
     }
 })
