@@ -47,8 +47,6 @@ document.addEventListener("keydown", e => {
     } 
 })
 
-popupContent.addEventListener("mouseover", () => {
-    popup.onclick = () => {
-        enableScroll();
-    }
+popup.addEventListener("mouseup", (e) => {
+    if(e.target === popup) enableScroll();
 })
