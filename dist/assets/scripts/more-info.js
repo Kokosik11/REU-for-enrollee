@@ -23,7 +23,7 @@ moreBtn.onclick = () => {
         if(degree.degreeID === moreBtn.dataset.id) {
             popup.style.display = "block";
             let content = popup.querySelector(".popup-info");
-            content.innerHTML = `<h2>${degree.title}<h2>`;
+            content.innerHTML = `<h2 class="popup-title">${degree.title}<h2>`;
             degree.content.forEach(cont => {
                 let str = `<div>${cont}</div>`;
                 content.innerHTML += str;

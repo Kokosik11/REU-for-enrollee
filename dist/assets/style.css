@@ -1374,3 +1374,14 @@ input[type=submit]:hover {
     transform: scale(0);
   }
 }
+
+.popup-info,
+.popup-info .popup-title {
+  color: #668EC6;
+}
+
+.popup-info h2,
+.popup-info h3,
+.popup-info b {
+  color: #0043A0;
+}
