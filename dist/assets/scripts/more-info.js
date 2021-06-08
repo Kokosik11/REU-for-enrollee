@@ -1,19 +1,18 @@
 const moreBtn = document.querySelector(".more-info");
 const popup = document.querySelector(".popup");
 const popupClose = document.querySelector(".popup-close");
+const popupContent = document.querySelector(".popup-content");
 
 function disableScroll() {
     document.body.classList.add("stop-scrolling");
-    let content = popup.querySelector(".popup-content");
-    content.classList.add("opened");
-    content.classList.remove("closed");
+    popupContent.classList.add("opened");
+    popupContent.classList.remove("closed");
 }
 
 function enableScroll() {
     document.body.classList.remove("stop-scrolling");
-    let content = popup.querySelector(".popup-content");
-    content.classList.remove("opened");
-    content.classList.add("closed");
+    popupContent.classList.remove("opened");
+    popupContent.classList.add("closed");
     setTimeout(() => {
         popup.style.display = "none";
     }, 750)
@@ -48,3 +47,6 @@ document.addEventListener("keydown", e => {
     } 
 })
 
+popup.addEventListener("mouseup", (e) => {
+    if(e.target === popup) enableScroll();
+})
