@@ -389,7 +389,7 @@ input[type=submit]:hover {
 .learn .cards .card {
     position: relative;
     max-width: 537px;
-    height: 293px;
+    min-height: 293px;
     margin-bottom: 59px;
     border-radius: 8px;
     color: white;
@@ -690,18 +690,23 @@ input[type=submit]:hover {
     width: 493px;
     padding: 36px 0;
     background: #F3F6FD;
-    border-radius: 30px;
-}
-
-.rules-content .document {
     margin-bottom: 35px;
+    border-radius: 30px;
+    text-decoration: none;
 }
 
 .document-name {
     color: #668EC6;
     font-size: 25px;
     font-weight: 500;
+    transition: .25s;
+  }
+
+.rules-content .document .document-name:hover {
+  color: #307ae2;
+  transition: .25s;
 }
+
 .courses {
   max-width: 1200px;
   margin: auto;
@@ -1245,6 +1250,13 @@ input[type=submit]:hover {
   }
 }
 
+@media (max-width: 700px) {
+  .program-line {
+    flex-direction: column;
+    max-width: 300px;
+  }
+}
+
 @media (max-width: 666px) {
   .footer-links {
     flex-wrap: wrap;
@@ -1257,6 +1269,27 @@ input[type=submit]:hover {
 
   .right-links {
     margin-left: 0;
+  }
+
+  .info-heading h1,
+  .education-heading h2,
+  .diploma-heading,
+  .how-to-enter_heading,
+  .price-heading,
+  .rules-heading,
+  .courses-heading,
+  .openday-heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .info .info-heading h3 {
+    color: #668EC6;
+  }
+
+  
+  .right-links {
+    margin-right: 0;
   }
 }
 
@@ -1273,6 +1306,25 @@ input[type=submit]:hover {
 @media (max-width: 590px) {
   .logo span {
     display: none;
+  }
+}
+
+@media (max-width: 514px) {
+  .learn .cards .card img.card-img {
+    position: static;
+    max-width: 280px;
+    max-height: 248px;
+  }
+
+  .learn .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .learn .cards .card div {
+    padding: 0;
   }
 }
 
