@@ -1366,7 +1366,7 @@ input[type=submit]:hover {
   }
 }
 
-@media (max-width: 404px) {
+@media (max-width: 420px) {
   .links {
     max-height: 700px;
   }
