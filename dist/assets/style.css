@@ -468,7 +468,7 @@ input[type=submit]:hover {
     background: #F3F6FD;
     border-radius: 8px;
     padding: 26px;
-    margin: 10px 10px;
+    margin: 30px 10px;
 }
 
 .diploma-card_content {
@@ -1393,9 +1393,13 @@ input[type=submit]:hover {
     font-size: 15px;
   }
 
+  .how-to-enter_cards .card:nth-child(1), .how-to-enter_cards .card:nth-child(2) {
+    margin-bottom: 30px;
+  }
+
   .how-to-enter_cards .card {
-    margin: 20px 0;
-    padding: 10px;
+    margin: 30px 0;
+    padding: 20px 15px;
     min-height: 150px;
   }
 
