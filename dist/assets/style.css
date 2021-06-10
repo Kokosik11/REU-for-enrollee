@@ -1212,7 +1212,7 @@ input[type=submit]:hover {
 
   .reu-info {
     max-width: 646px;
-    margin-bottom: 50px;
+    margin: 50px;
   }
 
   .footer-bottom {
@@ -1364,15 +1364,15 @@ input[type=submit]:hover {
   .learn .cards .card div {
     padding: 0;
   }
+
+  .reu-info {
+    margin: 50px 0;
+  }
 }
 
 @media (max-width: 420px) {
   .links {
     max-height: 700px;
-  }
-
-  .right-links {
-    justify-content: center;
   }
 
   .right-links nav {
