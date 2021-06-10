@@ -1132,6 +1132,11 @@ input[type=submit]:hover {
   .how-to-enter_heading {
     text-align: center;
   }
+
+  .popup .close {
+    right: 0;
+    top: -75px;
+  }
 }
 
 @media (max-width: 1148px) {
@@ -1248,6 +1253,10 @@ input[type=submit]:hover {
   .openday-schedule span img {
     margin-bottom: 0;
   }
+
+  .popup .popup-info {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1307,6 +1316,10 @@ input[type=submit]:hover {
   .logo span {
     display: none;
   }
+  .document-name, .document-format {
+    font-size: 14px;
+    line-height: 28px;
+  }
 }
 
 @media (max-width: 514px) {
@@ -1340,7 +1353,66 @@ input[type=submit]:hover {
   .right-links nav {
     margin-right: 0;
   }
+
+  .info-heading h1,
+  .education-heading h2,
+  .diploma-heading,
+  .how-to-enter_heading,
+  .price-heading,
+  .rules-heading,
+  .courses-heading,
+  .openday-heading,
+  .program-section h3,
+  .program-section .program-name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  header .degrees {
+    margin: 10px 0;
+  }
+
+  header .buttons {
+    margin-top: 30px;
+  }
+
+  .forms input {
+    margin-right: 0;
+    width: 95%;
+  }
+
+  .learn .cards .card {
+    margin: 30px 0;
+  }
+
+  .learn .cards .card div {
+    font-size: 15px;
+  }
+
+  .how-to-enter_cards .card {
+    margin: 20px 0;
+    padding: 10px;
+    min-height: 150px;
+  }
+
+  .how-to-enter_cards .card h3 {
+    text-align: center;
+  }
+
+  .how-to-enter_cards .card-title span {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .price-cards .card {
+    margin: 15px 0;
+  }
 }
+
 
 @media (max-width: 358px) {
   .sub-header, .line {
@@ -1349,6 +1421,14 @@ input[type=submit]:hover {
 
   header {
     margin-top: 25px;
+  }
+
+  .document-name {
+    margin-left: 15px;
+  }
+
+  .document-name {
+    line-height: 14px;
   }
 }
 
@@ -1367,7 +1447,6 @@ input[type=submit]:hover {
 .popup-content {
   position: relative;
   max-width: 1040px;
-  height: 782px;
   background-color: #fff;
   margin: 120px auto;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
@@ -1376,7 +1455,7 @@ input[type=submit]:hover {
 .popup-info {
   padding: 90px 180px;
   overflow: auto;
-  max-height: 700px;
+  max-height: 70vh;
 }
 
 .close {
