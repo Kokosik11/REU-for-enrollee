@@ -10,7 +10,6 @@ const db = require('./db/database')();
 const Table = require('./db/Table');
 const requests = require('./db/requests');
 const bodyParser = require('body-parser');
-const { urlencoded } = require('body-parser');
 
 const urlencodedParser = bodyParser.urlencoded({extended: false});
 
@@ -19,7 +18,7 @@ const connection = mysql.createConnection({
     port: "3306",
     user: "root",
     database: "enrolleedb",
-    password: "P159632Lab",
+    password: "159632Lab",
 }).promise();
 
 app.use(express.static('./dist'))
@@ -65,7 +64,7 @@ app.post('/request/:reqID', urlencodedParser, (req, res) => {
         .then(result => {
             console.log("Data has uploaded")
         })
-        catcg(err => { console.error(err) });
+        .catch(err => { console.error(err) });
 
     res.redirect('/');
 })

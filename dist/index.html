@@ -77,20 +77,20 @@
                 Здесь вы можете получить актуальную информацию о приёме на обучение по образовательным программам бакалавриата и магистратуры.
             </div>
 
-            <form method="POST" action="/request/1">
+            <form data-id="1" class="request-form">
                 <div class="info-questions">
                     Остались вопросы? <b>Получите консультацию приемной комиссии</b>
                 </div>
 
                 <div class="forms">
-                    <input type="text" name="name" placeholder="Ваше имя">
-                    <input type="text" name="phone" placeholder="Ваш телефон">
-                    <input type="email" name="email" placeholder="Ваш email">
-                    <input type="submit" value="Отправить">
+                    <input class="name" type="text" name="name" placeholder="Ваше имя">
+                    <input class="phone" type="text" name="phone" placeholder="Ваш телефон">
+                    <input class="email" type="email" name="email" placeholder="Ваш email">
+                    <input class="submit" type="submit" value="Отправить">
                 </div>
                 <div class="personal-data">
                     <label for="personal">
-                        <input type="checkbox" id="personal">
+                        <input type="checkbox" class="personal">
                         Я даю согласие на обработку моих персональных данных
                     </label>
                 </div>
@@ -547,5 +547,7 @@
     <script src="./assets/scripts/degrees.js"></script>
     <script src="./assets/scripts/dropdown.js"></script>
     <script src="./assets/scripts/more-info.js"></script>
+    <script src="./assets/scripts/jquery-3.6.0.min.js"></script>
+    <script src="./assets/scripts/ajax.js"></script>
 </body>
 </html>

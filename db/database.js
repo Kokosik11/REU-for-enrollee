@@ -10,7 +10,7 @@ const createDB = () => {
         port: "3306",
         user: "root",
         database: "enrolleedb",
-        password: "P159632Lab",
+        password: "159632Lab",
     });
     
     connection.connect((err) => {
