@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Абитуриентам | РЭУ им. Плеханова</title>
+
+    <meta name="title" content="Абитуриентам | РЭУ им. Плеханова">
+    <meta name="description" content="Мы рады приветствовать вас на странице абитуриентов Минского филиала РЭУ им. Г.В. Плеханова. Здесь вы можете получить актуальную информацию о приёме на обучение по образовательным программам бакалавриата и магистратуры.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kokosik11.github.io/REU-for-enrollee/dist/">
+    <meta property="og:title" content="Абитуриентам | РЭУ им. Плеханова">
+    <meta property="og:description" content="Мы рады приветствовать вас на странице абитуриентов Минского филиала РЭУ им. Г.В. Плеханова. Здесь вы можете получить актуальную информацию о приёме на обучение по образовательным программам бакалавриата и магистратуры.">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kokosik11.github.io/REU-for-enrollee/dist/">
+    <meta property="twitter:title" content="Абитуриентам | РЭУ им. Плеханова">
+    <meta property="twitter:description" content="Мы рады приветствовать вас на странице абитуриентов Минского филиала РЭУ им. Г.В. Плеханова. Здесь вы можете получить актуальную информацию о приёме на обучение по образовательным программам бакалавриата и магистратуры.">
+    <meta property="twitter:image" content="">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/reu.ico') }}" type="image/x-icon">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</head>
+<body>
+    <div class="popup">
+        <div class="popup-content closed">
+            <div class="popup-info"></div>
+            <div class="popup-close">
+                <span class="iconify close" data-inline="false" data-icon="ion:close-circle-outline"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub-header">
+        <div class="sub-header_content">
+            <span class="worktime">Время работы приемной комиссии: пн-пт с 10:00-16:00</span>
+            <span class="contacts">
+                <ul>
+                    <li><img src="{{ url_for('static', filename='img/number.svg') }}" id="phone-img" alt="phone">+375 17 316 12 86</li>
+                    <li><img src="{{ url_for('static', filename='img/number.svg') }}" id="phone-img" alt="phone">+375 29 126 11 36</li>
+                    <button>Заявка на обучение</button>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <div class="line"></div>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/reu.svg') }}" alt="Logo: REU">
+            <span>
+                Минский филиал 
+                Российского экономического
+                университета им. Г.В. Плеханова
+            </span>
+        </div>
+        <div class="buttons">
+            <a data-id="1" class="degrees active" href="#">Бакалавриат</a>
+            <a data-id="2" class="degrees" href="#">Магистратура</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="info">
+            <div class="info-heading">
+                <h1>Абитуриентам</h1>
+                <h3 class="right">Минского филиала Российского экономического университета им. Г.В. Плеханова</h3>
+            </div>
+
+            <div class="info-content">
+                Мы рады приветствовать вас на странице абитуриентов Минского филиала РЭУ им. Г.В. Плеханова.
+                Здесь вы можете получить актуальную информацию о приёме на обучение по образовательным программам бакалавриата и магистратуры.
+            </div>
+
+            <form>
+                <div class="info-questions">
+                    Остались вопросы? <b>Получите консультацию приемной комиссии</b>
+                </div>
+
+                <div class="forms">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш телефон">
+                    <input type="submit" value="Отправить">
+                </div>
+                <div class="personal-data">
+                    <label for="personal">
+                        <input type="checkbox" id="personal">
+                        Я даю согласие на обработку моих персональных данных
+                    </label>
+                </div>
+            </form>
+        </section>
+
+        <section class="education">
+            <div class="education-heading">
+                <h2>Образовательные программы</h2>
+                <h3 class="degree-name">Бакалавриат</h3>
+            </div>
+
+            <nav class="programs">
+                <div class="program-line">
+                    <div data-id="1" class="program program_active">Бизнес-информатика</div>
+                    <div data-id="2" class="program">Менеджмент</div>
+                    <div data-id="3" class="program">Экономика</div>
+                </div>
+
+                <div class="long-line">
+                    <div class="short-line"></div>
+                </div>                
+            </nav>
+
+            <article class="program-section">
+                <h3>
+                    Образовательная программа<br> 
+                    <span class="program-name">“Управление IT-инфраструктурой предприятия”</span>
+                </h3>
+    
+                <aside class="program-card">
+                    <span>
+                        Код и наименование направления подготовки: <br>
+                        <b class="program-direction">38.03.05 Бизнес-информатика</b>    
+                    </span>
+                    <span id="entrance">
+                        Вступительное испытание: <br>
+                        <b class="enter-exams">математика</b>    
+                    </span>
+                    <span>
+                        Формы обучения: <br>
+                        <b class="form-of-study">очная, очно-заочная (вечерняя)</b>    
+                    </span>
+                </aside>
+    
+                <div class="program-info">
+                    <span>
+                        <b class="direction-name-two">Бизнес-информатика</b><span class="direction-info"> - одно из самых молодых и перспективных направлений подготовки современного высшего образования, новая область профессиональной деятельности, формирующаяся на стыке экономики, менеджмента и информационно-коммуникационных технологий (ИКТ).</span>
+                    </span>
+    
+                    <button data-id="0" class="more-info">Подробнее</button>
+                </div>
+            </article>
+            
+            <article class="learn">
+                <h3>Чему вы научитесь</h3>
+
+                <div class="cards">
+                    <div class="card">
+                        <div>
+                            Разрабатывать концепции развития бизнеса на основе информационно-коммуникационных технологий
+                        </div>
+                        <img class="card-img" src="{{ url_for('static', filename='img/card-img_1.svg') }}" alt="Card: illustration 1">
+                    </div>
+                    <div class="card">
+                        <div>
+                            Разрабатывать архитектуру ИТ-инфраструктуры предприятия
+                        </div>
+                        <img class="card-img" src="{{ url_for('static', filename='img/card-img_2.svg') }}" alt="Card: illustration 2">
+                    </div>
+                    <div class="card">
+                        <div>
+                            Осуществлять систематическое планирование и развитие ИТ-инфраструктуры
+                        </div>
+                        <img class="card-img" src="{{ url_for('static', filename='img/card-img_3.svg') }}" alt="Card: illustration 3">
+                    </div>
+                    <div class="card">
+                        <div>
+                            Принимать стратегические решения в части выбора и внедрения информационных систем (ИС) и информационно-
+                            коммуникационных технологий (ИКТ) на предприятии
+                        </div>
+                        <img class="card-img" src="{{ url_for('static', filename='img/card-img_4.svg') }}" alt="Card: illustration 4">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="diploma">
+            <h2 class="diploma-heading">Образцы дипломов</h2>
+            <div class="diploma-content">
+                <div class="diploma-card">
+                    <img src="{{ url_for('static', filename='img/diploma-1.svg') }}" alt="Diploma: Image 1">
+                    <div class="diploma-card_content">
+                        Государственный диплом о высшем образовании с присвоением <b>степени бакалавра</b>
+                    </div>
+                    <a href="#">Посмотреть<img src="{{ url_for('static', filename='img/Show.svg') }}" alt="Icon: Show"></a>
+                </div>
+
+                <div class="diploma-card">
+                    <img src="{{ url_for('static', filename='img/diploma-2.svg') }}" alt="Diploma: Image 2">
+                    <div class="diploma-card_content">
+                        Государственный диплом о высшем образовании с присвоением <b>степени магистра</b>
+                    </div>
+                    <a href="#">Посмотреть<img src="{{ url_for('static', filename='img/Show.svg') }}" alt="Icon: Show"></a>
+                </div>
+
+                <div class="diploma-card">
+                    <img src="{{ url_for('static', filename='img/diploma-3.svg') }}" alt="Diploma: Image 3">
+                    <div class="diploma-card_content">
+                        Государственный диплом о высшем образовании с присвоением <b>степени бакалавра</b>
+                    </div>
+                    <a href="#">Посмотреть<img src="{{ url_for('static', filename='img/Show.svg') }}" alt="Icon: Show"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-to-enter">
+            <h2 class="how-to-enter_heading">Как поступить</h2>
+            <div class="how-to-enter_cards">
+                <div class="card">
+                    <h3>Шаг 1</h3>
+                    <div data-opened="false" data-id="1" class="card-title">
+                        <img src="{{ url_for('static', filename='img/radio.svg') }}" alt="Icon: Radio">
+                        <span>Подайте заявку на поступление</span>
+                        <img data-id="1" class="dropdown-arrow" src="{{ url_for('static', filename='img/arrow.svg') }}" alt="Icon: Arrow">
+                    </div>
+                    <div class="dropdown-content">
+                        Информацию по внутренним экзаменам или необходимым свидетельствам ЦТ или ЕГЭ можно узнать по телефону приемной комиссии: 	+ 375 29 126 11 36
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Шаг 2</h3>
+                    <div data-opened="false" data-id="2" class="card-title">
+                        <img src="{{ url_for('static', filename='img/radio.svg') }}" alt="Icon: Radio">
+                        <span>Предоставьте в приемную комиссию документы об уровне образования</span>
+                        <img data-id="2" class="dropdown-arrow" src="{{ url_for('static', filename='img/arrow.svg') }}" alt="Icon: Arrow">
+                    </div>
+                    <div class="dropdown-content">
+                        Информацию по внутренним экзаменам или необходимым свидетельствам ЦТ или ЕГЭ можно узнать по телефону приемной комиссии: 	+ 375 29 126 11 36
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Шаг 3</h3>
+                    <div data-opened="false" data-id="3" class="card-title">
+                        <img src="{{ url_for('static', filename='img/radio.svg') }}" alt="Icon: Radio">
+                        <span>Сдайте нужные вступительные испытания</span>
+                        <img data-id="3" class="dropdown-arrow" src="{{ url_for('static', filename='img/arrow.svg') }}" alt="Icon: Arrow">
+                    </div>
+                    <div class="dropdown-content">
+                        Информацию по внутренним экзаменам или необходимым свидетельствам ЦТ или ЕГЭ можно узнать по телефону приемной комиссии: 	+ 375 29 126 11 36
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Шаг 4</h3>
+                    <div data-opened="false" data-id="4" class="card-title">
+                        <img src="{{ url_for('static', filename='img/radio.svg') }}" alt="Icon: Radio">
+                        <span>Ожидайте списки рекомендованных к зачислению</span>
+                        <img data-id="4" class="dropdown-arrow" src="{{ url_for('static', filename='img/arrow.svg') }}" alt="Icon: Arrow">
+                    </div>
+                    <div class="dropdown-content">
+                        Информацию по внутренним экзаменам или необходимым свидетельствам ЦТ или ЕГЭ можно узнать по телефону приемной комиссии: 	+ 375 29 126 11 36
+                    </div>
+                </div>
+            </div>
+
+            <form>
+                <div class="info-questions">
+                    <b>Оставить заявку на обучение</b>
+                </div>
+
+                <div class="forms">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш телефон">
+                    <input type="email" placeholder="Ваш email">
+                    <input type="submit" value="Отправить">
+                </div>
+                <div class="personal-data">
+                    <label for="personal-1">
+                        <input type="checkbox" id="personal-1">
+                        Я даю согласие на обработку моих персональных данных
+                    </label>
+                </div>
+            </form>
+        </section>
+
+        <section class="price">
+            <h2 class="price-heading">Стоимость обучения</h2>
+            <div class="price-cards">
+                <div class="card">
+                    <h3 class="card-heading">Багалавриат</h3>
+                    <div class="card-subheading">Очная форма</div>
+                    <div class="card-price">55 000 рос.руб.</div>
+                    <div class="price-description">за семестр</div>
+                </div>
+                <div class="card">
+                    <h3 class="card-heading">Багалавриат</h3>
+                    <div class="card-subheading">очно-заочная форма</div>
+                    <div class="card-price">37 750 рос.руб.</div>
+                    <div class="price-description">за семестр</div>
+                </div>
+                <div class="card">
+                    <h3 class="card-heading">Магистратура</h3>
+                    <div class="card-subheading">Заочная</div>
+                    <div class="card-price">26 000 рос.руб.</div>
+                    <div class="price-description">за семестр</div>
+                </div>
+            </div>
+
+            <form>
+                <div class="info-questions">
+                    <b>Оставить заявку и узнать стоимость обучения</b>
+                </div>
+
+                <div class="forms">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш телефон">
+                    <input type="email" placeholder="Ваш email">
+                    <input type="submit" value="Отправить">
+                </div>
+                <div class="personal-data">
+                    <label for="personal-1">
+                        <input type="checkbox" id="personal-1">
+                        Я даю согласие на обработку моих персональных данных
+                    </label>
+                </div>
+            </form>
+        </section>
+
+        <section class="rules">
+            <h2 class="rules-heading">Правила приема и вступительные испытания</h2>
+            <div class="rules-content">
+                <a href="#" class="document">
+                    <span class="document-name">Правила приёма</span>
+                    <span class="document-format">.pdf</span>
+                    <img src="{{ url_for('static', filename='img/arrow-link.svg') }}" alt="Icon: Arrow link">
+                </a>
+                <a href="#" class="document">
+                    <span class="document-name">План приема</span>
+                    <span class="document-format">.pdf</span>
+                    <img src="{{ url_for('static', filename='img/arrow-link.svg') }}" alt="Icon: Arrow link">
+                </a>
+                <a href="#" class="document">
+                    <span class="document-name">Вступительные испытания</span>
+                    <span class="document-format">.pdf</span>
+                    <img src="{{ url_for('static', filename='img/arrow-link.svg') }}" alt="Icon: Arrow link">
+                </a>
+                <a href="#" class="document">
+                    <span class="document-name">Cроки подачи документов</span>
+                    <span class="document-format">.pdf</span>
+                    <img src="{{ url_for('static', filename='img/arrow-link.svg') }}" alt="Icon: Arrow link">
+                </a>
+                <a href="#" class="document">
+                    <span class="document-name">Документы для поступления</span>
+                    <span class="document-format">.pdf</span>
+                    <img src="{{ url_for('static', filename='img/arrow-link.svg') }}" alt="Icon: Arrow link">
+                </a>
+                <a href="#" class="document">
+                    <span class="document-name">...</span>
+                    <div class="document-content">
+                        <span class="document-format">.pdf</span>
+                        <img src="{{ url_for('static', filename='img/arrow-link.svg') }}" alt="Icon: Arrow link">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="courses">
+            <h2 class="courses-heading">Подготовительные курсы</h2>
+            <div class="courses-info">
+                Минский филиал РЭУ имени Г.В. Плеханова объявляет набор на <b>подготовительные курсы</b> для сдачи вступительного экзамено <b>по математике</b>
+            </div>
+
+            <div class="courses-cards">
+                <div class="card">
+                    <h3 class="card-heading">Курс по математике</h3>
+                    <span class="card-price">1 880 рос.руб.</span>
+                    <span class="price-description">6 академических часов</span>
+                </div>
+            </div>
+
+            <form>
+                <div class="info-questions">
+                    <b>Оставить заявку на подготовительный курс</b>
+                </div>
+
+                <div class="forms">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш телефон">
+                    <input type="email" placeholder="Ваш email">
+                    <input type="submit" value="Отправить">
+                </div>
+                <div class="personal-data">
+                    <label for="personal-1">
+                        <input type="checkbox" id="personal-1">
+                        Я даю согласие на обработку моих персональных данных
+                    </label>
+                </div>
+            </form>
+        </section>
+
+        <section class="openday">
+            <h2 class="openday-heading">День открытых дверей</h2>
+            <div class="openday-content">
+                <div class="openday-schedule">
+                    <span class="openday-geo">
+                        <img src="{{ url_for('static', filename='img/geo.svg') }}" alt="Icon: Geo">
+                        <a href="#" class="openday-text">Радиальная 40, ауд. 510.</a>
+                    </span>
+                    <span class="openday-day">
+                        <img src="{{ url_for('static', filename='img/Calendar.svg') }}" alt="Icon: Calendar">
+                        <time class="openday-text">22 мая 2021 года</time>
+                    </span>
+                    <span class="openday-geo">
+                        <img src="{{ url_for('static', filename='img/Time Square.svg') }}" alt="Icon: Time">
+                        <time class="openday-text">11:00</time>
+                    </span>
+                </div>
+
+                <img src="{{ url_for('static', filename='img/Graduate.svg') }}" alt="illustration: Graduate">
+            </div>
+
+            <div class="openday-info">
+                <span>
+                    Участники Дней открытых дверей смогут <b>познакомиться с образовательными программами</b> Минского филиала РЭУ им. Г.В. Плеханова, а представители администрации, преподаватели и студенты <b>ответят на любые вопросы</b> абитуриентов и их родителей.
+                </span>
+                <span>
+                    В рамках мероприятия гости смогут <b>получить актуальную информацию о правилах поступления и обучения, познакомиться с современными образовательными возможностями университета</b>, из первых уст узнать о <b>преимуществах наших образовательных программ и перспективах трудоустройства.</b>
+                </span>
+            </div>
+
+            <form>
+                <div class="info-questions">
+                    <b>Записаться на день открытых дверей</b>
+                </div>
+
+                <div class="forms">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш телефон">
+                    <input type="email" placeholder="Ваш email">
+                    <input type="submit" value="Отправить">
+                </div>
+                <div class="personal-data">
+                    <label for="personal-1">
+                        <input type="checkbox" id="personal-1">
+                        Я даю согласие на обработку моих персональных данных
+                    </label>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content-info">
+            <div class="footer-content">
+            <div class="reu-info">
+                <div class="address">
+                    <div class="reu-heading">Адрес корпуса</div>
+                    <span class="metro"><img src="{{ url_for('static', filename='img/metro.svg') }}" alt="Icon: Metro"> Тракторный завод</span>
+                    <a href="#" class="address-info">Радиальная 40, корпус 1</a>
+                </div>
+
+                <div class="committee">
+                    <div class="reu-heading">Приёмная комиссия</div>
+
+                    <div class="working-hours">
+                        <span class="working-hours_content">
+                            <span class="day">Пн-пт</span>
+                            <time>09:30-17:00</time>
+                        </span>
+
+                        <span class="working-hours_content">
+                            <span class="day">Сб</span>
+                            <time>10:00-14:00</time>
+                        </span>
+                    </div>
+
+                    <div class="phones">
+                        <a href="#" class="phone"><img src="{{ url_for('static', filename='img/number.svg') }}" alt="Icon: Phone">+ 375 17 316 12 86</a>
+                        <a href="#" class="phone"><img src="{{ url_for('static', filename='img/number.svg') }}" alt="Icon: Phone">+ 375 29 126 11 36</a>
+                    </div>
+                </div>
+
+                <button>Задать вопрос</button>
+            </div>
+
+            <div class="footer-links">
+                <div class="links left-links">
+                    <nav>
+                        <h3>Абитуриентам</h3>
+                        <ul>
+                            <li><a class="link" href="#">Направления</a></li>
+                            <li><a class="link" href="#">Специальности</a></li>
+                            <li><a class="link" href="#">Приемная комиссия</a></li>
+                            <li><a class="link" href="#">Правила приема</a></li>
+                            <li><a class="link" href="#">Вступительные испытания</a></li>
+                            <li><a class="link" href="#">Как поступить</a></li>
+                            <li><a class="link" href="#">Образцы дипломов</a></li>
+                            <li><a class="link" href="#">День открытых дверей</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="links right-links">
+                    <nav>
+                        <h3>Формы обучения</h3>
+                        <ul>
+                            <li><a class="link" href="#">Очная</a></li>
+                            <li><a class="link" href="#">Заочная</a></li>
+                            <li><a class="link" href="#">Вечерняя</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav>
+                        <h3>РЭУ Минский филиал</h3>
+                        <ul>
+                            <li><a class="link" href="#">О филиале</a></li>
+                            <li><a class="link" href="#">Контакты</a></li>
+                            <li><a class="link" href="#">Лаборатория</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav>
+                        <h3>Студентам</h3>
+                        <ul>
+                            <li><a class="link" href="#">Расписание</a></li>
+                            <li><a class="link" href="#">Оплата обучения</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copy">© 2021 Минский филиал РЭУ им. Г.В. Плеханова</div>
+                <a href="#">Политика конфиденциальности</a>
+            </div>       
+        </div>
+
+        <img class="scientist" src="{{ url_for('static', filename='img/science.svg') }}" alt="illustration: Science" id="scientist">
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/data/info.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/navigation.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/degrees.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dropdown.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/more-info.js') }}"></script>
+</body>
+</html>
