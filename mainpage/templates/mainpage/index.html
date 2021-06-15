@@ -199,7 +199,7 @@
                     <div class="diploma-card_content">
                         Государственный диплом о высшем образовании с присвоением <b>степени бакалавра</b>
                     </div>
-                    <a href="#">Посмотреть<img src="/img/Show.svg" alt="Icon: Show"></a>
+                    <a href="{{ STATIC_URL }}/img/reu-diplom-bakalavra.jpg" target="_blank">Посмотреть<img src="/img/Show.svg" alt="Icon: Show"></a>
                 </div>
 
                 <div class="diploma-card">
@@ -207,7 +207,7 @@
                     <div class="diploma-card_content">
                         Государственный диплом о высшем образовании с присвоением <b>степени магистра</b>
                     </div>
-                    <a href="#">Посмотреть<img src="/img/Show.svg" alt="Icon: Show"></a>
+                    <a href="{{ STATIC_URL }}/img/reu-diplom-magistra.jpg" target="_blank">Посмотреть<img src="/img/Show.svg" alt="Icon: Show"></a>
                 </div>
 
                 <div class="diploma-card">
@@ -215,7 +215,7 @@
                     <div class="diploma-card_content">
                         Государственный диплом о высшем образовании с присвоением <b>степени бакалавра</b>
                     </div>
-                    <a href="#">Посмотреть<img src="/img/Show.svg" alt="Icon: Show"></a>
+                    <a href="{{ STATIC_URL }}/img/reu-evropejskoe-prilojenie.jpg" target="_blank">Посмотреть<img src="/img/Show.svg" alt="Icon: Show"></a>
                 </div>
             </div>
         </section>
@@ -279,14 +279,13 @@
                 </div>
 
                 <div class="forms">
-                    {{ study_form.name }}
-                    {{ study_form.email }}
-                    {{ study_form.phone }}
+                    {{ phone_form.name }}
+                    {{ phone_form.phone }}
                     <input type="submit" value="Отправить">
                 </div>
                 <div class="personal-data">
                     <label for="personal-1">
-                        {{ study_form.checkbox }}
+                        {{ phone_form.checkbox }}
                         Я даю согласие на обработку моих персональных данных
                     </label>
                 </div>
@@ -323,14 +322,13 @@
                 </div>
 
                 <div class="forms">
-                    {{ price_form.name }}
-                    {{ price_form.email }}
-                    {{ price_form.phone }}
+                    {{ phone_form.name }}
+                    {{ phone_form.phone }}
                     <input type="submit" value="Отправить">
                 </div>
                 <div class="personal-data">
                     <label for="personal-1">
-                        {{ price_form.checkbox }}
+                        {{ phone_form.checkbox }}
                         Я даю согласие на обработку моих персональных данных
                     </label>
                 </div>
@@ -340,12 +338,7 @@
         <section class="rules">
             <h2 class="rules-heading">Правила приема и вступительные испытания</h2>
             <div class="rules-content">
-                <a href="#" class="document">
-                    <span class="document-name">Правила приёма</span>
-                    <span class="document-format">.pdf</span>
-                    <img src="/img/arrow-link.svg" alt="Icon: Arrow link">
-                </a>
-                <a href="#" class="document">
+                <a href="{{ STATIC }}/img/files/plan_priema_na_napravlenija_podgotovki_bakalavriata.pdf" target="_blank" class="document">
                     <span class="document-name">План приема</span>
                     <span class="document-format">.pdf</span>
                     <img src="/img/arrow-link.svg" alt="Icon: Arrow link">
@@ -355,14 +348,14 @@
                     <span class="document-format">.pdf</span>
                     <img src="/img/arrow-link.svg" alt="Icon: Arrow link">
                 </a>
-                <a href="#" class="document">
+                <a href="{{ STATIC }}/img/files/sroki_provedenija_priema_na_programmy_bakalavriata.pdf" class="document">
                     <span class="document-name">Cроки подачи документов</span>
                     <span class="document-format">.pdf</span>
                     <img src="/img/arrow-link.svg" alt="Icon: Arrow link">
                 </a>
-                <a href="#" class="document">
+                <a href="{{ STATIC }}/img/doc.png" target="_blank" class="document">
                     <span class="document-name">Документы для поступления</span>
-                    <span class="document-format">.pdf</span>
+                    <span class="document-format">.png</span>
                     <img src="/img/arrow-link.svg" alt="Icon: Arrow link">
                 </a>
                 <a href="#" class="document">
@@ -396,14 +389,13 @@
                 </div>
 
                 <div class="forms">
-                    {{ course_form.name }}
-                    {{ course_form.email }}
-                    {{ course_form.phone }}
+                    {{ phone_form.name }}
+                    {{ phone_form.phone }}
                     <input type="submit" value="Отправить">
                 </div>
                 <div class="personal-data">
                     <label for="personal-1">
-                        {{ course_form.checkbox }}
+                        {{ phone_form.checkbox }}
                         Я даю согласие на обработку моих персональных данных
                     </label>
                 </div>
@@ -447,14 +439,13 @@
                 </div>
 
                 <div class="forms">
-                    {{ day_form.name }}
-                    {{ day_form.email }}
-                    {{ day_form.phone }}
+                    {{ phone_form.name }}
+                    {{ phone_form.phone }}
                     <input type="submit" value="Отправить">
                 </div>
                 <div class="personal-data">
                     <label for="personal-1">
-                        {{ day_form.checkbox }}
+                        {{ phone_form.checkbox }}
                         Я даю согласие на обработку моих персональных данных
                     </label>
                 </div>
