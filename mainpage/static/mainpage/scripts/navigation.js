@@ -12,6 +12,8 @@ const formOfStudy = document.querySelector(".form-of-study");
 const directionNameTwo = document.querySelector(".direction-name-two");
 const directionInfo = document.querySelector(".direction-info");
 
+const learnCard = document.querySelectorAll(".learn .cards .card");
+
 let info = bachalorInfo;
 let isBachalorInfo = true;
 
@@ -57,6 +59,11 @@ const changeData = (dataset) => {
     formOfStudy.innerHTML = info[dataset].formOfStudy;
     directionNameTwo.innerHTML = info[dataset].directionNameTwo;
     directionInfo.innerHTML = info[dataset].directionInfo;
+
+    learnCard.forEach((card, index) => {
+        let cardContent = card.querySelector("div");
+        cardContent.innerHTML = info[dataset].cards[index];
+    })
 }
 
 buttons.forEach((button, index) => {

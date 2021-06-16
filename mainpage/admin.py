@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import FeedbackCommittee, Category
+from .models import FeedbackCommittee, Category, Price
 
 @admin.register(Category)
 class PostAdmin(admin.ModelAdmin):
@@ -16,6 +16,8 @@ class FeedbackAdmin(admin.ModelAdmin):
     search_fields = ('name', 'email',)
     list_filter = ('status',)
     ordering = ['-created_on']
+
+admin.site.register(Price)
 
 admin.site.site_title = 'Администрирование абитуриентам РЭУ'
 admin.site.site_header = 'Абитуриентам РЭУ'

@@ -1,6 +1,5 @@
 const moreBtn = document.querySelector(".more-info");
 const popup = document.querySelector(".popup");
-const popupClose = document.querySelector(".popup-close");
 const popupContent = document.querySelector(".popup-content");
 
 function disableScroll() {
@@ -34,12 +33,6 @@ moreBtn.onclick = () => {
 
     disableScroll();
 }
-
-popupClose.onclick = () => {
-    if(popup.style.display == "block") { 
-        enableScroll();
-    }
-};
 
 document.addEventListener("keydown", e => {
     if(e.key == "Escape" && popup.style.display == "block") {

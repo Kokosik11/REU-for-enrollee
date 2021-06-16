@@ -10,6 +10,10 @@ body {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input:not([type=checkbox]):not([type=radio]),
 textarea, 
 select {
@@ -608,6 +612,12 @@ input[type=submit]:hover {
     flex-wrap: wrap;
 }
 
+.price-cards span {
+  margin-top: 25px;
+  color: #6B6B6B;
+  font-weight: 500;
+}
+
 .price-cards .card {
     width: 307px;
     background: #F3F6FD;
@@ -636,7 +646,7 @@ input[type=submit]:hover {
     font-weight: 700;
     margin: 0 0 10px 0;
     color: #0043A0;
-    width: 240px;
+    width: 255px;
 }
 
 .price-cards .price-description {
@@ -878,6 +888,7 @@ input[type=submit]:hover {
 }
 .footer-bottom {
   display: flex;
+  align-items: center;
   margin-bottom: 40px;
 }
 .footer-bottom .copy {
@@ -888,11 +899,16 @@ input[type=submit]:hover {
   margin-right: 40px;
 }
 .footer-bottom a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   color: #668EC6;
+}
+.footer-bottom a img {
+  margin-right: 10px;
 }
 .reu-info {
   background: #E8EDF9;
@@ -1473,12 +1489,71 @@ input[type=submit]:hover {
   z-index: 10;
 }
 
+.popup-question {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00214eb6;
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
 .popup-content {
   position: relative;
   max-width: 1040px;
   background-color: #fff;
   margin: 120px auto;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.popup-question_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 536px;
+  background-color: #fff;
+  margin: 120px auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  padding: 0 126px;
+}
+
+.popup-question_content h2 {
+  font-size: 48px;
+  margin-top: 50px;
+  color: #0043A0;
+}
+
+.popup-question_content input {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.popup-question_content input[type="submit"] {
+  width: 100%;
+}
+
+.popup-question_content input[type="button"] {
+  margin: 50px 0;
+  background-color: white;
+  border: 2px solid #0355c9;
+  border-radius: 8px;
+  width: 100%;
+  height: 62px;
+  color: #0043A0;
+  font-size: 24px;
+  font-weight: 500;
+  transition: .25s;
+}
+
+.popup-question_content input[type="button"]:hover {
+  cursor: pointer;
+  border-color: #589eff;
+  color: #3a7ddb;
+  transition: .25s;
 }
 
 .popup-info {
@@ -1559,7 +1634,39 @@ input[type=submit]:hover {
 	text-align: center;
 	margin-top: 30px;
 }
+
 .messages ul {
   margin: 0;
   padding: 0;
+}
+
+.footer-lab {
+  display: flex;
+  align-items: center;
+}
+
+.directions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.bach {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.bach span {
+  color: #6B6B6B;
+  font-weight: 500;
+}
+.bach h4 {
+  font-size: 20px;
+  color: #668EC6;
+  margin: 20px 0px;
+}
+.directions h2 {
+  font-size: 30px;
+  color: #0043A0;
+  margin: 20px 0px;
 }

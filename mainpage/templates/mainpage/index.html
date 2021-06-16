@@ -33,9 +33,29 @@
     <div class="popup">
         <div class="popup-content closed">
             <div class="popup-info"></div>
-            <div class="popup-close">
-                <span class="iconify close" data-inline="false" data-icon="ion:close-circle-outline"></span>
-            </div>
+        </div>
+    </div>
+
+    <div class="popup-question">
+        <div class="popup-question_content closed">
+            <h2 style="font-size: 35px;">Задайте вопрос приемной комиссии</h2>
+            <form method="POST">
+                {% csrf_token %}
+            
+                {{ form.name }}
+                {{ form.email }}
+                {{ form.text }}
+            
+                <div class="personal-data">
+                    <label for="personal">
+                        {{ form.checkbox }}
+                        Я даю согласие на обработку моих персональных данных
+                    </label>
+                </div>
+
+                <input type="submit" value="Отправить">
+                <input type="button" value="Закрыть" class="popup-question_close">
+            </form>
         </div>
     </div>
 
@@ -46,7 +66,6 @@
                 <ul>
                     <li><img src="/img/number.svg" id="phone-img" alt="phone">+375 17 316 12 86</li>
                     <li><img src="/img/number.svg" id="phone-img" alt="phone">+375 29 126 11 36</li>
-                    <button>Заявка на обучение</button>
                 </ul>
             </span>
         </div>
@@ -191,7 +210,7 @@
             </article>
         </section>
 
-        <section class="diploma">
+        <section class="diploma" id="diploma">
             <h2 class="diploma-heading">Образцы дипломов</h2>
             <div class="diploma-content">
                 <div class="diploma-card">
@@ -220,18 +239,14 @@
             </div>
         </section>
 
-        <section class="how-to-enter">
+        <section class="how-to-enter" id="howToEnter">
             <h2 class="how-to-enter_heading">Как поступить</h2>
             <div class="how-to-enter_cards">
                 <div class="card">
                     <h3>Шаг 1</h3>
                     <div data-opened="false" data-id="1" class="card-title">
                         <img src="/img/radio.svg" alt="Icon: Radio">
-                        <span>Подайте заявку на поступление</span>
-                        <img data-id="1" class="dropdown-arrow" src="/img/arrow.svg" alt="Icon: Arrow">
-                    </div>
-                    <div class="dropdown-content">
-                        Информацию по внутренним экзаменам или необходимым свидетельствам ЦТ или ЕГЭ можно узнать по телефону приемной комиссии: 	+ 375 29 126 11 36
+                        <span>Подайте заявление на поступление</span>
                     </div>
                 </div>
 
@@ -240,10 +255,6 @@
                     <div data-opened="false" data-id="2" class="card-title">
                         <img src="/img/radio.svg" alt="Icon: Radio">
                         <span>Предоставьте в приемную комиссию документы об уровне образования</span>
-                        <img data-id="2" class="dropdown-arrow" src="/img/arrow.svg" alt="Icon: Arrow">
-                    </div>
-                    <div class="dropdown-content">
-                        Информацию по внутренним экзаменам или необходимым свидетельствам ЦТ или ЕГЭ можно узнать по телефону приемной комиссии: 	+ 375 29 126 11 36
                     </div>
                 </div>
 
@@ -252,10 +263,6 @@
                     <div data-opened="false" data-id="3" class="card-title">
                         <img src="/img/radio.svg" alt="Icon: Radio">
                         <span>Сдайте нужные вступительные испытания</span>
-                        <img data-id="3" class="dropdown-arrow" src="/img/arrow.svg" alt="Icon: Arrow">
-                    </div>
-                    <div class="dropdown-content">
-                        Информацию по внутренним экзаменам или необходимым свидетельствам ЦТ или ЕГЭ можно узнать по телефону приемной комиссии: 	+ 375 29 126 11 36
                     </div>
                 </div>
 
@@ -264,61 +271,29 @@
                     <div data-opened="false" data-id="4" class="card-title">
                         <img src="/img/radio.svg" alt="Icon: Radio">
                         <span>Ожидайте списки рекомендованных к зачислению</span>
-                        <img data-id="4" class="dropdown-arrow" src="/img/arrow.svg" alt="Icon: Arrow">
-                    </div>
-                    <div class="dropdown-content">
-                        Информацию по внутренним экзаменам или необходимым свидетельствам ЦТ или ЕГЭ можно узнать по телефону приемной комиссии: 	+ 375 29 126 11 36
                     </div>
                 </div>
             </div>
-
-            <form method="POST">
-                {% csrf_token %}
-                <div class="info-questions">
-                    <b>Оставить заявку на обучение</b>
-                </div>
-
-                <div class="forms">
-                    {{ phone_form.name }}
-                    {{ phone_form.phone }}
-                    <input type="submit" value="Отправить">
-                </div>
-                <div class="personal-data">
-                    <label for="personal-1">
-                        {{ phone_form.checkbox }}
-                        Я даю согласие на обработку моих персональных данных
-                    </label>
-                </div>
-            </form>
         </section>
 
         <section class="price">
             <h2 class="price-heading">Стоимость обучения</h2>
             <div class="price-cards">
+                {% for price in prices %}
                 <div class="card">
-                    <h3 class="card-heading">Багалавриат</h3>
-                    <div class="card-subheading">Очная форма</div>
-                    <div class="card-price">55 000 рос.руб.</div>
+                    <h3 class="card-heading">{{ price.name }}</h3>
+                    <div class="card-subheading">{{ price.forms }}</div>
+                    <div class="card-price">{{ price.price }} рос.руб. *</div>
                     <div class="price-description">за семестр</div>
                 </div>
-                <div class="card">
-                    <h3 class="card-heading">Багалавриат</h3>
-                    <div class="card-subheading">очно-заочная форма</div>
-                    <div class="card-price">37 750 рос.руб.</div>
-                    <div class="price-description">за семестр</div>
-                </div>
-                <div class="card">
-                    <h3 class="card-heading">Магистратура</h3>
-                    <div class="card-subheading">Заочная</div>
-                    <div class="card-price">26 000 рос.руб.</div>
-                    <div class="price-description">за семестр</div>
-                </div>
+                {% endfor %}
+                <span>* Оплата за обучение производится в белорусских рублях по курсу НБРБ</span>
             </div>
 
             <form method="POST">
                 {% csrf_token %}
                 <div class="info-questions">
-                    <b>Оставить заявку и узнать стоимость обучения</b>
+                    <b>Оставить заявку на поступление</b>
                 </div>
 
                 <div class="forms">
@@ -338,34 +313,57 @@
         <section class="rules">
             <h2 class="rules-heading">Правила приема и вступительные испытания</h2>
             <div class="rules-content">
+                <a href="#" target="_blank" class="document">
+                    <span class="document-name">Правила приема</span>
+                    <span class="document-format">.pdf</span>
+                    <img src="/img/arrow-link.svg" alt="Icon: Arrow link">
+                </a>
+                <a href="#" target="_blank" class="document">
+                    <span class="document-name">Приложения</span>
+                    <span class="document-format">.pdf</span>
+                    <img src="/img/arrow-link.svg" alt="Icon: Arrow link">
+                </a>
                 <a href="{{ STATIC }}/img/files/plan_priema_na_napravlenija_podgotovki_bakalavriata.pdf" target="_blank" class="document">
                     <span class="document-name">План приема</span>
                     <span class="document-format">.pdf</span>
                     <img src="/img/arrow-link.svg" alt="Icon: Arrow link">
                 </a>
-                <a href="#" class="document">
-                    <span class="document-name">Вступительные испытания</span>
-                    <span class="document-format">.pdf</span>
-                    <img src="/img/arrow-link.svg" alt="Icon: Arrow link">
-                </a>
-                <a href="{{ STATIC }}/img/files/sroki_provedenija_priema_na_programmy_bakalavriata.pdf" class="document">
+                <a href="{{ STATIC }}/img/files/Сроки подачи документов.pdf" class="document">
                     <span class="document-name">Cроки подачи документов</span>
                     <span class="document-format">.pdf</span>
                     <img src="/img/arrow-link.svg" alt="Icon: Arrow link">
                 </a>
                 <a href="{{ STATIC }}/img/doc.png" target="_blank" class="document">
                     <span class="document-name">Документы для поступления</span>
-                    <span class="document-format">.png</span>
+                    <span class="document-format">.pdf</span>
                     <img src="/img/arrow-link.svg" alt="Icon: Arrow link">
                 </a>
-                <a href="#" class="document">
-                    <span class="document-name">...</span>
-                    <div class="document-content">
-                        <span class="document-format">.pdf</span>
-                        <img src="/img/arrow-link.svg" alt="Icon: Arrow link">
-                    </div>
+                <a href="#" target="_blank" class="document">
+                    <span class="document-name">Образцы договоров</span>
+                    <span class="document-format">.pdf</span>
+                    <img src="/img/arrow-link.svg" alt="Icon: Arrow link">
                 </a>
             </div>
+            <div class="directions">
+                <h2>Вступительные испытания и минимальный проходной балл</h2>
+                <div class="bach">
+                    <h4>Бакалавриат (все направления)</h4>
+                    <span>Математика (профильный) - 39 баллов</span>
+                </div>
+                <div class="bach">
+                    <h4>Магистратура (менеджмент)</h4>
+                    <span>Комплексный экзамен.
+                        Профильные предметы:
+                        «Теория менеджмента», «Маркетинг» - 30 баллов</span>
+                </div>
+                <div class="bach">
+                    <h4>Магистратура (экономика)</h4>
+                    <span>Комплексный экзамен.
+                        Профильные предметы:
+                        «Экономическая теория», «Финансы и кредит» - 30 баллов</span>
+                </div>
+            </div>
+            
         </section>
 
         <section class="courses">
@@ -402,7 +400,7 @@
             </form>
         </section>
 
-        <section class="openday">
+        <section class="openday" id="openday">
             <h2 class="openday-heading">День открытых дверей</h2>
             <div class="openday-content">
                 <div class="openday-schedule">
@@ -484,7 +482,7 @@
                     </div>
                 </div>
 
-                <button>Задать вопрос</button>
+                <button class="ask-question">Задать вопрос</button>
             </div>
 
             <div class="footer-links">
@@ -492,42 +490,25 @@
                     <nav>
                         <h3>Абитуриентам</h3>
                         <ul>
-                            <li><a class="link" href="#">Направления</a></li>
-                            <li><a class="link" href="#">Специальности</a></li>
-                            <li><a class="link" href="#">Приемная комиссия</a></li>
-                            <li><a class="link" href="#">Правила приема</a></li>
+                            <li><a class="link" href="#">Образовательные программы</a></li>
+                            <li><a class="link" href="{{ STATIC }}/img/files/plan_priema_na_napravlenija_podgotovki_bakalavriata.pdf" target="_blank">План приема</a></li>
+                            <li><a class="link" href="{{ STATIC }}/img/files/sroki_provedenija_priema_na_programmy_bakalavriata.pdf" target="_blank">Сроки приема</a></li>
                             <li><a class="link" href="#">Вступительные испытания</a></li>
-                            <li><a class="link" href="#">Как поступить</a></li>
-                            <li><a class="link" href="#">Образцы дипломов</a></li>
-                            <li><a class="link" href="#">День открытых дверей</a></li>
+                            <li><a class="link" href="#howToEnter">Как поступить</a></li>
+                            <li><a class="link" href="#diploma">Образцы дипломов</a></li>
+                            <li><a class="link" href="#openday">День открытых дверей</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="links right-links">
                     <nav>
-                        <h3>Формы обучения</h3>
-                        <ul>
-                            <li><a class="link" href="#">Очная</a></li>
-                            <li><a class="link" href="#">Заочная</a></li>
-                            <li><a class="link" href="#">Вечерняя</a></li>
-                        </ul>
-                    </nav>
-
-                    <nav>
                         <h3>РЭУ Минский филиал</h3>
                         <ul>
-                            <li><a class="link" href="#">О филиале</a></li>
-                            <li><a class="link" href="#">Контакты</a></li>
-                            <li><a class="link" href="#">Лаборатория</a></li>
-                        </ul>
-                    </nav>
-
-                    <nav>
-                        <h3>Язык</h3>
-                        <ul>
-                            <li><a class="link" href="#">Русский</a></li>
-                            <li><a class="link" href="#">English</a></li>
+                            <li><a class="link" href="https://minsk.rea.ru/" target="_blank">О филиале</a></li>
+                            <li><a class="link" href="https://reu.by/filial/kontakty.html" target="_blank">Контакты</a></li>
+                            <li><a class="link" href="https://lab.reu.by/" target="_blank">Лаборатория</a></li>
+                            <li><a class="link" href="https://regstat.rea.ru/Belarus" target="_blank">Ситуационный центр</a></li>
                         </ul>
                     </nav>
 
@@ -535,7 +516,7 @@
                         <h3>Студентам</h3>
                         <ul>
                             <li><a class="link" href="#">Расписание</a></li>
-                            <li><a class="link" href="#">Оплата обучения</a></li>
+                            <li><a class="link" href="https://reu.by/studentam/oplata-za-obuchenie-cherez-erip.html" target="_blank">Оплата обучения</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -543,7 +524,7 @@
             </div>
             <div class="footer-bottom">
                 <div class="copy">© 2021 Минский филиал РЭУ им. Г.В. Плеханова</div>
-                <a href="#">Политика конфиденциальности</a>
+                <a href="https://lab.reu.by/" target="_blank"><img src="/img/lab-footer.svg" alt=""> Лаборатория Графического дизайна и веб-проектирования</a>
             </div>       
         </div>
 
@@ -555,5 +536,6 @@
     <script src="{% static 'mainpage/scripts/degrees.js' %}"></script>
     <script src="{% static 'mainpage/scripts/dropdown.js' %}"></script>
     <script src="{% static 'mainpage/scripts/more-info.js' %}"></script>
+    <script src="{% static 'mainpage/scripts/askquestion.js' %}"></script>
 </body>
 </html>

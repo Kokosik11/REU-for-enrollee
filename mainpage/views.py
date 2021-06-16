@@ -1,4 +1,4 @@
-from mainpage.models import Category
+from mainpage.models import Category, Price
 from django.shortcuts import render, redirect
 from .forms import FeedbackCommitteeForm, FeedbackPhoneForm
 from django.core.mail import send_mail
@@ -6,6 +6,7 @@ from django.conf import settings
 from django.contrib import messages
 
 def main(request):
+  prices = Price.objects.all()
   if request.method == "POST":
     form = FeedbackCommitteeForm(request.POST)
     if form.is_valid():
@@ -33,7 +34,9 @@ def main(request):
     phone_form = FeedbackPhoneForm()
 
   context = {
+    'form': form,
     'phone_form': phone_form,
+    'prices': prices,
   }
 
   return render(request, "mainpage/index.html", context)

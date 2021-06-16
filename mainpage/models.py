@@ -41,3 +41,25 @@ class FeedbackCommittee(models.Model):
     ordering = ['-created_on']
     verbose_name = "Заявка"
     verbose_name_plural = "Заявки"
+
+
+
+
+class Price(models.Model):
+
+  FORMS = {
+    ('Очная форма', 'Очная форма'),
+    ('Очно-заочная форма', 'Очно-заочная форма'),
+    ('Заочная форма', 'Заочная форма'),
+  }
+
+  name = models.CharField("Наименование", max_length=100, default="")
+  price = models.IntegerField("Стоимость обучения", default=55000)
+  forms = models.CharField("Форма обучния", choices=FORMS, default="Очная форма", max_length=100)
+
+  def __str__(self):
+    return f'{self.name} - {self.price}'
+
+  class Meta:
+    verbose_name = "Специальность"
+    verbose_name_plural = "Специальности"
